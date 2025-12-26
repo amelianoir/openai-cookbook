@@ -35,13 +35,20 @@ Most code examples are written in Python, though the concepts can be applied in 
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
-3. **Install dependencies for specific examples**
+3. **Install dependencies**
    
-   Each example has its own dependencies. Navigate to the example directory and install its requirements:
+   Most examples require the OpenAI Python package. Install it with:
+   ```bash
+   pip install openai jupyter
+   ```
+   
+   Some examples have additional dependencies listed in a `requirements.txt` file. When present, install them with:
    ```bash
    cd examples/<example-directory>
    pip install -r requirements.txt
    ```
+   
+   If an example doesn't have a `requirements.txt`, check the imports at the top of the notebook and install packages as needed (e.g., `pip install pandas matplotlib`).
 
 4. **Configure your OpenAI API key**
    
