@@ -37,9 +37,9 @@ Most code examples are written in Python, though the concepts can be applied in 
 
 3. **Install dependencies**
    
-   Most examples require the OpenAI Python package. Install it with:
+   Most examples require the OpenAI Python package:
    ```bash
-   pip install openai jupyter
+   pip install openai
    ```
    
    Some examples have additional dependencies listed in a `requirements.txt` file. When present, install them with:
@@ -62,9 +62,9 @@ Most code examples are written in Python, though the concepts can be applied in 
    OPENAI_API_KEY=your-api-key-here
    ```
 
-5. **Run Jupyter notebooks**
+5. **Run the notebook examples**
    
-   If working with notebook examples, install Jupyter:
+   Install Jupyter to work with the notebooks:
    ```bash
    pip install jupyter
    jupyter notebook  # or: jupyter lab
