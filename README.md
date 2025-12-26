@@ -13,6 +13,63 @@ Example code and guides for accomplishing common tasks with the [OpenAI API](htt
 
 Most code examples are written in Python, though the concepts can be applied in any language.
 
+## Getting Started
+
+### Prerequisites
+
+- Python 3.8 or higher
+- Git
+- An OpenAI API key ([create a free account here](https://platform.openai.com/signup))
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/openai/openai-cookbook.git
+   cd openai-cookbook
+   ```
+
+2. **Set up a virtual environment** (recommended)
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install dependencies**
+   
+   Most examples require the OpenAI Python package:
+   ```bash
+   pip install openai
+   ```
+   
+   Some examples have additional dependencies listed in a `requirements.txt` file. When present, install them with:
+   ```bash
+   cd examples/<example-directory>
+   pip install -r requirements.txt
+   ```
+   
+   If an example doesn't have a `requirements.txt`, check the imports at the top of the notebook and install packages as needed (e.g., `pip install pandas matplotlib`).
+
+4. **Configure your OpenAI API key**
+   
+   Set your API key as an environment variable:
+   ```bash
+   export OPENAI_API_KEY='your-api-key-here'  # On Windows: set OPENAI_API_KEY=your-api-key-here
+   ```
+   
+   Or create a `.env` file in the root directory:
+   ```
+   OPENAI_API_KEY=your-api-key-here
+   ```
+
+5. **Run the notebook examples**
+   
+   Install Jupyter to work with the notebooks:
+   ```bash
+   pip install jupyter
+   jupyter notebook  # or: jupyter lab
+   ```
+
 For other useful tools, guides and courses, check out these [related resources from around the web](https://cookbook.openai.com/related_resources).
 
 ## License
